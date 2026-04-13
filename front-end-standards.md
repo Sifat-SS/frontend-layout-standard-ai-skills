@@ -3,6 +3,9 @@
 **Origin**: While developing frontend projects with AI agents, I observed recurring layout and structural issues in the generated code. To address this, I created this "AI Skill"—a robust set of rules and protocols designed to guide AI agents toward producing durable, high-performance, and visually consistent frontend code.  
 **Purpose**: A Universal AI Skill File for high-end web development, responsive durability, and automated DevOps.
 
+> [!IMPORTANT]
+> **Tablet Testing Disclaimer**: While these protocols have been battle-tested on multiple mobile and desktop environments, they have **not yet been validated on actual tablet hardware**. Some layout behaviors (like orientation shifts) may require refinement. If you test these standards on a tablet and find issues, your feedback and suggested updates are highly encouraged!
+
 ---
 
 ## **Why to use this?** 🏆
