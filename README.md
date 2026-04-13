@@ -10,11 +10,11 @@ To solve this, I created this repository as a **Universal AI Skill File**. It pr
 
 ## **Quick Access** ⚡
 Everything you need to know is documented in the high-level standards file:
-👉 **[Full Frontend Standards](front-end-standards.md)**
+👉 **[Full Frontend Standards](frontend-layout-standard-ai-skills.md)**
 
 ## **How to Use** 🛠️
 1. **AI Instruction**: Pass the URL of this repository to your AI agent and tell it to follow these standards.
-2. **Local Base**: Clone this repo and use `front-end-standards.md` as a checklist during your build process.
+2. **Local Base**: Clone this repo and use `frontend-layout-standard-ai-skills.md` as a checklist during your build process.
 3. **Team Rubric**: Use the standards as a quality control baseline for code reviews and QA.
 
 ---
