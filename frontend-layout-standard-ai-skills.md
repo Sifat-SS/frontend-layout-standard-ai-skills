@@ -52,7 +52,8 @@ High quality with low overhead.
 
 ---
 
-## 4. **Bilingual "Zero-Reload" Strategy** 🇲🇽🇺🇸
+## 4. **Bilingual "Zero-Reload" Strategy** (Situational) 🌍
+**Note**: Only implement this protocol if a project explicitly requires multi-language support. Do not apply for single-language builds.
 - **Method**: Render the page with both languages present. Use a `data-lang` attribute on the `<html>` tag to toggle visibility via CSS (`.lang-en { display: none; }`).
 - **UX**: Persist the selection using `localStorage` to ensure the preference is remembered upon return.
 
