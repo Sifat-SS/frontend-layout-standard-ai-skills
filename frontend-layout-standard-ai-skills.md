@@ -41,6 +41,8 @@ Always prioritize "Content Integrity" on mobile devices.
 Maintain the "Premium" feel by preventing premature stacking.
 - **Medium Screen Breakpoints**: Use specific `fr` ratios (e.g., `1.5fr 1fr 1fr`) at the 1024px/768px breakpoints to keep Footer and Feature columns side-by-side as long as readability allows.
 - **Padding Discipline**: Ensure `container` classes provide a minimum `20px` gutter on mobile to prevent text from touching the screen edges.
+- **Typography Reset Integrity**: AI Agents must always reset `button, input, select, textarea` to `font-family: inherit` and `color: inherit`. This prevents mismatched system fonts from breaking the brand's visual language.
+- **The Dash-Density Rule**: For dashboard layouts, prioritize a "Single-View" experience. Use `flex-wrap` and dynamic scaling (ratios like `1fr minmax(0, 3fr)`) ensure the entire interface is visible at 100% browser zoom on a standard 1080p display without vertical scrolling.
 
 ---
 
@@ -48,7 +50,8 @@ Maintain the "Premium" feel by preventing premature stacking.
 High quality with low overhead.
 - **Semantic HTML5**: Always use strictly semantic tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`) for SEO and Accessibility.
 - **Scroll Reveals**: Use the native `IntersectionObserver` API for "reveal-on-scroll" animations to avoid heavy JS scroll libraries.
-- **Hardware Acceleration**: Use `transform` and `opacity` properties for transitions to ensure smooth rendering on low-power mobile devices.
+- **Hardware Acceleration**: Use `transform` and `opacity` properties for transitions. Force GPU layering on critical animated elements using `will-change: transform`.
+- **Tactile Feedback Protocol**: Implement high-end haptic-lite interaction standards. All primary buttons and interactive cards must utilize a hardware-accelerated `:active { transform: scale(0.98); }` state for immediate user feedback.
 
 ---
 
@@ -63,6 +66,13 @@ High quality with low overhead.
 - **The Handshake**: For Git-to-cPanel workflows, use a secure PHP script to trigger a `uapi` pull and deploy sequence. Store tokens in a file safely outside the public web root.
 - **Absolute Path Rule**: Within `.cpanel.yml`, always use Absolute Paths for file movement tasks, as environment variables do not persist across multiple task lines.
 - **Cache-Busting**: Production assets must utilize version strings (e.g., `styles.css?v=2.4`) to bypass aggressive mobile browser caching and ensure users see updates instantly.
+
+---
+
+## 6. **Component Architectural Standards** 🧱
+Maintain a "Zero-Style-Bloat" codebase.
+- **Standardized Utilities**: Avoid inline-style repetition for recurring premium elements. Codify `.premium-card` (glassmorphism/hover-lift) and `.modal-overlay` (fixed backdrop-blur) in the global CSS to ensure interaction parity across different features.
+- **Modal Logic**: Modals should always utilize a centralized `inset-0` fixed overlay with `backdrop-filter: blur(4px)` to isolate the user task from background noise.
 
 ---
 **Standard Created**: April 2026  
