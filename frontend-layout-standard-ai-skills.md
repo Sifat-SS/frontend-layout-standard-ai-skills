@@ -39,10 +39,13 @@ Always prioritize "Content Integrity" on mobile devices.
 
 ## 2. **Layout & Grid Integrity** 🗺️
 Maintain the "Premium" feel by preventing premature stacking.
-- **Medium Screen Breakpoints**: Use specific `fr` ratios (e.g., `1.5fr 1fr 1fr`) at the 1024px/768px breakpoints to keep Footer and Feature columns side-by-side as long as readability allows.
-- **Padding Discipline**: Ensure `container` classes provide a minimum `20px` gutter on mobile to prevent text from touching the screen edges.
-- **Typography Reset Integrity**: AI Agents must always reset `button, input, select, textarea` to `font-family: inherit` and `color: inherit`. This prevents mismatched system fonts from breaking the brand's visual language.
-- **The Dash-Density Rule**: For dashboard layouts, prioritize a "Single-View" experience. Use `flex-wrap` and dynamic scaling (ratios like `1fr minmax(0, 3fr)`) ensure the entire interface is visible at 100% browser zoom on a standard 1080p display without vertical scrolling.
+- **Medium Screen Breakpoints**: Maintain the "Premium" multi-column feel on tablets (1024px/768px) by adjusting grid ratios rather than premature stacking. 
+    - *Example*: Use specific `fr` ratios like `1.5fr 1fr 1fr` to keep footers and feature blocks side-by-side.
+- **Padding Discipline**: Ensure containers provide a standard comfortable gutter on mobile to prevent text from touching screen edges. 
+    - *Recommendation*: A minimum of `20px` is the baseline for premium spacing.
+- **Typography Reset Integrity**: AI Agents must always reset `button, input, select, textarea` to `font-family: inherit` and `color: inherit` to prevent system fonts from breaking the design language.
+- **The Dash-Density Rule**: For dashboard layouts, prioritize a "Single-View" experience. Utilize `flex-wrap` and dynamic scaling to ensure the entire interface remains visible at 100% zoom on a standard 1080p display (avoiding vertical scroll for primary tasks).
+    - *Example Logic*: Use ratios like `1fr minmax(0, 3fr)` for sidebar/content balance.
 
 ---
 
@@ -50,8 +53,8 @@ Maintain the "Premium" feel by preventing premature stacking.
 High quality with low overhead.
 - **Semantic HTML5**: Always use strictly semantic tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`) for SEO and Accessibility.
 - **Scroll Reveals**: Use the native `IntersectionObserver` API for "reveal-on-scroll" animations to avoid heavy JS scroll libraries.
-- **Hardware Acceleration**: Use `transform` and `opacity` properties for transitions. Force GPU layering on critical animated elements using `will-change: transform`.
-- **Tactile Feedback Protocol**: Implement high-end haptic-lite interaction standards. All primary buttons and interactive cards must utilize a hardware-accelerated `:active { transform: scale(0.98); }` state for immediate user feedback.
+- **Hardware Acceleration**: Prioritize GPU-friendly properties (`transform`, `opacity`) for all transitions. Force GPU layering on critical animated elements (using `will-change`) to ensure smooth rendering on low-power mobile devices.
+- **Tactile Feedback Protocol**: Implement high-end haptic-lite interaction logic. All primary interactive elements must utilize subtle hardware-accelerated transformations (e.g., `scale(0.98)`) for immediate active-state feedback.
 
 ---
 
@@ -62,17 +65,19 @@ High quality with low overhead.
 
 ---
 
-## 5. **DevOps & Deployment Automation** 🛰️
-- **The Handshake**: For Git-to-cPanel workflows, use a secure PHP script to trigger a `uapi` pull and deploy sequence. Store tokens in a file safely outside the public web root.
-- **Absolute Path Rule**: Within `.cpanel.yml`, always use Absolute Paths for file movement tasks, as environment variables do not persist across multiple task lines.
-- **Cache-Busting**: Production assets must utilize version strings (e.g., `styles.css?v=2.4`) to bypass aggressive mobile browser caching and ensure users see updates instantly.
+## 5. **Automated Deployment & DevOps** 🛰️
+- **The Handshake Protocol**: For Git-to-Server workflows, utilize an automated deployment sequence (e.g., a secure PHP pull script or GitHub Action). Store all sensitive tokens/secrets safely outside the public web root.
+- **Environment Integrity**: When configuring deployment tasks (e.g., in `.cpanel.yml` or CI scripts), use **Absolute Paths** for all file movements to ensure persistence across environment lines.
+- **Cache-Busting Strategy**: Production assets must utilize version strings to bypass aggressive browser caching.
+    - *Example*: Use `styles.css?v=2.4` to ensure users see updates instantly without manual hard-reloads.
 
 ---
 
 ## 6. **Component Architectural Standards** 🧱
-Maintain a "Zero-Style-Bloat" codebase.
-- **Standardized Utilities**: Avoid inline-style repetition for recurring premium elements. Codify `.premium-card` (glassmorphism/hover-lift) and `.modal-overlay` (fixed backdrop-blur) in the global CSS to ensure interaction parity across different features.
-- **Modal Logic**: Modals should always utilize a centralized `inset-0` fixed overlay with `backdrop-filter: blur(4px)` to isolate the user task from background noise.
+Maintain a "Zero-Style-Bloat" codebase through pattern standardization.
+- **Global Utility Logic**: Identify and codify recurring premium design patterns into **Global Utility Classes** (e.g., glassmorphism, depth/shadows, modal backdrops). This ensures interaction parity and reduces technical debt.
+    - *Standard Classes*: Use descriptive names like `.premium-card` (for depth/lift) and `.modal-overlay` (for backdrops).
+- **Depth & Dimension Protocol**: Interactive overlays and modals should utilize centralized fixed positioning and background isolation (e.g., `backdrop-filter: blur(4px)`) to keep task focus sharp.
 
 ---
 **Standard Created**: April 2026  
