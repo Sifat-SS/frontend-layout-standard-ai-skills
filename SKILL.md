@@ -1,3 +1,8 @@
+---
+name: sifat-frontend-standards
+description: Sifat's battle-tested frontend web development standards for high-end, responsive layouts and deployment.
+---
+
 # Sifat's Frontend Web Development Standards 🚀✨
 **Author**: Sifat  
 **Origin**: While developing frontend projects with AI agents, I observed recurring layout and structural issues in the generated code. To address this, I created this "AI Skill"—a robust set of rules and protocols designed to guide AI agents toward producing durable, high-performance, and visually consistent frontend code.  
