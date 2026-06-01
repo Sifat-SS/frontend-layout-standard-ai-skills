@@ -1,11 +1,11 @@
 ---
-name: sifat-frontend-standards
-description: Sifat's battle-tested frontend web development standards for high-end, responsive layouts and deployment.
+name: premium-frontend-standards
+description: Battle-tested frontend web development standards for high-end, responsive layouts and deployment.
 ---
 
-# Sifat's Frontend Web Development Standards 🚀✨
+# Premium Frontend Web Development Standards 🚀✨
 **Author**: Sifat  
-**Origin**: While developing frontend projects with AI agents, I observed recurring layout and structural issues in the generated code. To address this, I created this "AI Skill"—a robust set of rules and protocols designed to guide AI agents toward producing durable, high-performance, and visually consistent frontend code.  
+**Origin**: While developing high-end frontend projects with AI agents, the author observed recurring layout and structural issues in generic AI-generated code. To address this, this "AI Skill" was created—a robust set of rules and protocols designed to guide AI agents toward producing durable, high-performance, and visually consistent frontend code.  
 **Purpose**: A Universal AI Skill File for high-end web development, responsive durability, and automated DevOps.
 
 > [!IMPORTANT]
@@ -13,22 +13,40 @@ description: Sifat's battle-tested frontend web development standards for high-e
 
 ---
 
-## **Why to use this?** 🏆
-This repository provides a battle-tested blueprint for creating "Premium" web experiences. It eliminates decision fatigue and prevents common technical pitfalls by:
-- **Ensuring Responsive Durability**: Solving layout breakage in restrictive environments like Instagram and Facebook in-app browsers.
-- **Guaranteeing Visual Integrity**: Preventing asset cropping and premature column stacking on mobile.
-- **Standardizing Performance**: Using native APIs and hardware-accelerated transitions for a buttery-smooth feel.
-- **Automating Reliability**: Providing a foolproof DevOps strategy for Git-to-cPanel deployments.
+## **When and Where to Use This Skill** 🎯
 
-## **How to use this?** 🛠️
-1. **As an AI Context**: Copy the content of this README and paste it into the system prompt or context of your AI assistant (e.g., Antigravity, ChatGPT, Claude) to ensure it generates high-end, standards-compliant code.
-2. **AI Agent Link Injection**: Copy the URL of this repository and pass it to a web-capable AI agent, instructing it to: *"Follow the frontend standards at [this URL] for all code generation in this project."*
-3. **Cloning for Local Reference**: Clone this repository to keep a local "Source of Truth" for your development team:
-   ```bash
-   git clone https://github.com/Sifat-SS/sifat-frontend-standards.git
-   ```
-4. **As a Developer Checklist**: Reference the protocols during the build process to verify that your layout, bilingual logic, and deployment scripts meet "Premium" requirements.
-5. **In CI/CD Configurations**: Use the deployment rules in Section 5 to configure your `.cpanel.yml` and handle cache-busting effectively.
+This skill should be activated and utilized in the following scenarios:
+
+### 1. **Target Projects (Where to Use)**
+* **High-End Web Applications & SaaS:** Dashboards, analytics platforms, and portals that require a dense, highly interactive "single-view" layout (1080p optimized).
+* **Responsive Landing Pages:** Marketing websites and landing pages where conversion, visual polish, and brand alignment are critical.
+* **Creative Portfolios & Interactive Sites:** Layouts using hardware-accelerated animations and scroll reveal effects.
+* **Production Environments:** Projects requiring automated deployment configurations (e.g., Git-to-cPanel workflows, cache-busting).
+
+### 2. **Triggering Scenarios (When to Use)**
+* **Layout Design Phase:** When initializing or refactoring grid/flexbox layouts to prevent premature mobile stacking.
+* **Mobile Optimization:** When testing layouts for restrictive environments like **Instagram, Facebook, or webview in-app browsers** where layout breakage typically occurs.
+* **Haptic & Animation Implementation:** When writing custom transition logic, hover effects, active scale states, or scroll reveals.
+* **CI/CD & Deployment Setup:** When preparing `.cpanel.yml` files, PHP deployment pull scripts, or configuring asset version control for aggressive caching.
+* **Situational Bilingual Setup:** When the client specifies a requirement for multi-language toggle functionality without reloading the page.
+
+---
+
+## **How to Use** 🛠️
+
+### 1. **For AI Coding Assistants (Automatic)**
+Once installed, this skill activates automatically whenever you ask the assistant to construct page layouts, design responsive grid systems, configure CSS, write animation logic, or set up deployment scripts.
+* **Proactive Triggering:** You can explicitly invoke this skill by prompting:
+  > *"Build a new feature page using our `premium-frontend-standards` skill guidelines."*
+
+### 2. **Installation & Reusability**
+Install the skill into any project using the Agent Skills CLI:
+```bash
+npx skills add https://github.com/Sifat-SS/frontend-layout-standard-ai-skills.git
+```
+
+### 3. **Manual Developer Checklist**
+Use the sections below as a reference checklist during code reviews, QA, and deployment preparation to ensure structural integrity and premium interaction parity.
 
 ---
 
