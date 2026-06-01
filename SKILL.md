@@ -5,7 +5,7 @@ description: Battle-tested frontend web development standards for high-end, resp
 
 # Premium Frontend Web Development Standards 🚀✨
 **Author**: Sifat  
-**Origin**: While developing high-end frontend projects with AI agents, the author observed recurring layout and structural issues in generic AI-generated code. To address this, this "AI Skill" was created—a robust set of rules and protocols designed to guide AI agents toward producing durable, high-performance, and visually consistent frontend code.  
+**Origin**: While developing high-end frontend projects with AI agents, I observed recurring layout and structural issues in generic AI-generated code. To address this, I created this "AI Skill"—a robust set of rules and protocols designed to guide AI agents toward producing durable, high-performance, and visually consistent frontend code.  
 **Purpose**: A Universal AI Skill File for high-end web development, responsive durability, and automated DevOps.
 
 > [!IMPORTANT]
