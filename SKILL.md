@@ -1,43 +1,52 @@
 ---
 name: premium-frontend-standards
-description: Battle-tested frontend web development standards for high-end, responsive layouts and deployment.
+description: Battle-tested frontend web development standards for high-end, responsive layouts, dense instrumentation dashboards, and multi-paradigm DevOps deployment.
 ---
 
 # Premium Frontend Web Development Standards 🚀✨
 **Author**: Sifat  
-**Origin**: While developing high-end frontend projects with AI agents, I observed recurring layout and structural issues in generic AI-generated code. To address this, I created this "AI Skill"—a robust set of rules and protocols designed to guide AI agents toward producing durable, high-performance, and visually consistent frontend code.  
-**Purpose**: A Universal AI Skill File for high-end web development, responsive durability, and automated DevOps.
+**Origin**: While developing high-end frontend projects with AI agents, I observed recurring layout, structural, and scaling issues across both generic AI-generated code and specialized UI interfaces. To solve this, I created this "AI Skill"—a comprehensive set of conditional rules and battle-tested engineering protocols designed to guide AI agents toward producing durable, high-performance, and visually impeccable frontend code across every project paradigm.  
+**Purpose**: A Universal, Scenario-Aware AI Skill File for high-end web development, responsive durability, cockpit-dense dashboards, and automated DevOps.
 
 > [!IMPORTANT]
-> **Tablet Testing Disclaimer**: While these protocols have been battle-tested on multiple mobile and desktop environments, they have **not yet been validated on actual tablet hardware**. Some layout behaviors (like orientation shifts) may require refinement. If you test these standards on a tablet and find issues, your feedback and suggested updates are highly encouraged!
+> **Tablet & Device Testing Disclaimer**: While these protocols have been battle-tested on multiple mobile, desktop, and edge environments, always validate multi-column orientation shifts on actual hardware when deploying critical client surfaces. If you discover edge-case behavior during production QA, your feedback and suggested updates are highly encouraged!
 
 ---
 
 ## **When and Where to Use This Skill** 🎯
 
-This skill should be activated and utilized in the following scenarios:
+This skill should be activated and utilized automatically across all frontend development tasks. However, to prevent applying the wrong architectural rules to the wrong surfaces, AI coding assistants MUST first classify the target scenario using our **Conditional Execution Engine**.
 
-### 1. **Target Projects (Where to Use)**
-* **High-End Web Applications & SaaS:** Dashboards, analytics platforms, and portals that require a dense, highly interactive "single-view" layout (1080p optimized).
-* **Responsive Landing Pages:** Marketing websites and landing pages where conversion, visual polish, and brand alignment are critical.
-* **Creative Portfolios & Interactive Sites:** Layouts using hardware-accelerated animations and scroll reveal effects.
-* **Production Environments:** Projects requiring automated deployment configurations (e.g., Git-to-cPanel workflows, cache-busting).
+### 1. **Target Project Archetypes (Where to Use)**
+* **Scenario A: Marketing Websites, Landing Pages & SaaS Shells:** Fluid, high-conversion layouts (`/`, promotional pages, creative portfolios) where responsive wrapping, visual elasticity, and scroll-reveal aesthetics rule.
+* **Scenario B: High-Density Instrumentation Cockpits (`/admin`, CRMs, Command Decks):** Dense, precision-machined dashboards where data visibility, rigid sidebar boundaries (`220px`), exact internal padding (`!important`), and sub-pixel alignment take absolute priority over standard responsive wrapping.
+* **Scenario C: Production Deployment & CI/CD Pipelines:** Automated build and deployment tasks across modern edge/serverless runtimes (`Cloudflare, Vercel, Next.js`) and traditional server architectures (`cPanel, PHP, Apache`).
 
-### 2. **Triggering Scenarios (When to Use)**
-* **Layout Design Phase:** When initializing or refactoring grid/flexbox layouts to prevent premature mobile stacking.
-* **Mobile Optimization:** When testing layouts for restrictive environments like **Instagram, Facebook, or webview in-app browsers** where layout breakage typically occurs.
-* **Haptic & Animation Implementation:** When writing custom transition logic, hover effects, active scale states, or scroll reveals.
-* **CI/CD & Deployment Setup:** When preparing `.cpanel.yml` files, PHP deployment pull scripts, or configuring asset version control for aggressive caching.
-* **Situational Bilingual Setup:** When the client specifies a requirement for multi-language toggle functionality without reloading the page.
+---
+
+## **The Conditional Execution Engine (AI Scenario Routing)** 🧭
+
+Before writing code or adjusting layouts, **AI agents must identify which scenario applies to the target file/component and enforce only the matching conditional protocol**:
+
+```mermaid
+graph TD
+    A[Analyze Target Surface / Component] --> B{What is the Primary Scenario?}
+    B -->|Scenario A: Client-Facing / Marketing| C[Enforce Section 1: Responsive Durability & Fluid Grid Protocol]
+    B -->|Scenario B: Admin Dashboard / Cockpit| D[Enforce Section 2: High-Density Cockpit & Precision UI Protocol]
+    B -->|Scenario C: DevOps & Build Pipeline| E[Enforce Section 4: Multi-Paradigm Deployment Strategy]
+    C --> F[Enforce Section 3: Universal Haptic Physics & Performance]
+    D --> F
+```
 
 ---
 
 ## **How to Use** 🛠️
 
 ### 1. **For AI Coding Assistants (Automatic)**
-Once installed, this skill activates automatically whenever you ask the assistant to construct page layouts, design responsive grid systems, configure CSS, write animation logic, or set up deployment scripts.
-* **Proactive Triggering:** You can explicitly invoke this skill by prompting:
-  > *"Build a new feature page using our `premium-frontend-standards` skill guidelines."*
+Once installed in `.agents/skills/`, this skill activates whenever the assistant is asked to build pages, refactor layouts, style UI components, write animation logic, or configure deployment workflows.
+* **Proactive Prompt Triggering:**
+  > *"Refactor our dashboard layout following the `premium-frontend-standards` Scenario B (Cockpit) guidelines."*
+  > *"Build the responsive landing page using our `premium-frontend-standards` Scenario A (Marketing) protocol."*
 
 ### 2. **Installation & Reusability**
 Install the skill into any project using the Agent Skills CLI:
@@ -45,63 +54,125 @@ Install the skill into any project using the Agent Skills CLI:
 npx skills add https://github.com/Sifat-SS/frontend-layout-standard-ai-skills.git
 ```
 
-### 3. **Manual Developer Checklist**
-Use the sections below as a reference checklist during code reviews, QA, and deployment preparation to ensure structural integrity and premium interaction parity.
+---
+
+## 1. **Scenario A: Responsive Durability Protocol (`Marketing & Client Shells`)** 📱
+*Apply these rules when building client-facing websites, hero sections, multi-item feature stacks, and interactive galleries where content fluidity and mobile readability are paramount.*
+
+- **Rule 1.1: The "No-Cage" Rule (`height: auto` vs. Fixed Heights)**  
+  Never set fixed `height` values within media queries for primary containers (`hero` cards, feature blocks, accordion panels, or timeline stacks). Always use `height: auto` or `min-height` to allow containers to scale naturally as text wraps across smaller mobile viewports (`390px / 430px`). Trapping content inside fixed heights causes text clipping, overlapping containers, and broken mobile UX.
+
+- **Rule 1.2: In-App WebView Browser Overrides**  
+  When building grid-based landing pages or promotional modals targeting mobile traffic, use `width: 100% !important` and `height: 100% !important` on primary grid shells to override restrictive viewport defaults inside mobile social media WebViews (`Instagram, Facebook, TikTok in-app browsers`).
+
+- **Rule 1.3: Asset & Aspect-Ratio Scaling**  
+  - **Interactive Galleries & Cards:** Use `object-fit: cover` with explicit aspect ratios (`aspect-video` or `aspect-[4/3]`) to maintain clean grid symmetry across varying screen sizes.
+  - **Promotional Banners & Text Images:** Use `object-fit: contain` paired with `height: auto` to guarantee that embedded text or diagrams are never cropped out.
+
+- **Rule 1.4: Premium Multi-Column Breakpoints (`No Premature Stacking`)**  
+  On tablet viewports (`1024px / 768px`), adjust grid column ratios (`1.5fr 1fr 1fr`) to preserve a side-by-side editorial feel rather than dropping prematurely to a single vertical column. Only drop to a single column below `640px` (mobile).
 
 ---
 
-## 1. **Responsive Durability Protocol** 📱
-Always prioritize "Content Integrity" on mobile devices.
-- **The "No-Cage" Rule**: Avoid setting fixed `height` values within media queries for primary containers. Use `height: auto` or `min-height` to allow containers to scale naturally with their content.
-- **In-App Browser Fix**: In grid-based layouts on mobile, use `width: 100% !important` and `height: 100% !important` to override restrictive defaults in mobile browsers (e.g., Instagram/Facebook).
-- **Asset Scaling**: 
-    - Use `object-fit: cover` for interactive galleries to maintain grid symmetry.
-    - Use `object-fit: contain` and `height: auto` for promotional banners with text to prevent information loss via cropping.
+## 2. **Scenario B: High-Density Cockpit & Admin Protocol (`Command Decks`)** 🖥️
+*Apply these rules when building internal CRMs, admin consoles (`app/admin/`), instrumentation cockpits, data grids, and control panels where precision geometry, exact spacing, and zero layout thrashing are mandatory.*
+
+- **Rule 2.1: The Single-View Cockpit Rule (`No Full-Page Stacking`)**  
+  In a dense admin dashboard, standard responsive wrapping (`auto-fit`) must **not** be allowed to push the primary navigation sidebar above or below the main canvas on desktop viewports (`>= 1024px`).  
+  - Enforce a rigid, non-scrolling vertical navigation shell (`w-[220px] shrink-0 h-full select-none`) paired with a scrollable right-side workspace container (`flex-1 min-w-0 overflow-y-auto overflow-x-hidden`).
+  - Below `768px` (mobile/tablet), convert the sidebar into a high-precision slide-over drawer (`SlideOverDrawer`) or bottom navigation bar (`min-h-[54px]`) with generous touch targets.
+
+- **Rule 2.2: True Equal Post-Sidebar Padding (`120px Equal Cushioning`)**  
+  When a fixed vertical sidebar (`220px`) sits on the left side of a widescreen browser (`1440p / 1080p`), applying global padding (`px-12`) across the entire screen causes severe visual asymmetry (the card collides against the sidebar while leaving massive empty space on the far right).  
+  - **Mandatory Fix:** Always measure and apply horizontal padding (`paddingLeft: clamp(32px, 6vw, 120px), paddingRight: clamp(32px, 6vw, 120px)`) strictly **inside** the right-side `flex-1` workspace container. This guarantees that the distance from the right edge of the sidebar to the card equals the exact distance from the card to the right edge of the browser window (`100% equal visual symmetry`).
+
+- **Rule 2.3: Global CSS Reset Insulation & Bulletproof Surface Padding (`!important`)**  
+  Global CSS resets (`form, div { padding: 0; }` or fluid hero `h1/h2` clamps in `base.css`) will strip utility padding (`p-8`, `pt-6`) and distort headings inside modular hardware enclosures.  
+  - **Insulation:** Convert semantic headings (`h1, h2, p`) inside dense tool panels to neutral `div` elements with explicit font styling (`text-2xl font-bold`) to prevent global stylesheet contamination.
+  - **Bulletproof Padding:** Always inject dedicated `!important` surface classes directly into the admin layout (`app/admin/page.tsx` style block) to make padding unbreakable:
+    ```css
+    .admin-surface-card {
+      padding: clamp(28px, 4vw, 40px) clamp(28px, 4vw, 56px) !important;
+      box-sizing: border-box !important;
+      width: 100% !important;
+    }
+    .admin-form-surface {
+      padding: 24px clamp(28px, 4vw, 56px) 20px clamp(28px, 4vw, 56px) !important;
+      box-sizing: border-box !important;
+      width: 100% !important;
+    }
+    ```
+  - **Inner Form Padding Cushion:** Push internal form headings (`PUBLIC STATUS HEADLINE`) and input boxes (`Available for work`) well inwards away from outer card boundaries using exact inner padding (`paddingLeft: 28px, paddingRight: 28px`). This keeps top corners clean without altering total card dimensions (`keep card same size`).
+
+- **Rule 2.4: Machined Outer vs. Inner Corner Geometry (`rounded-2xl` Harmony)**  
+  Never use bulbous, oversized landing-page curves (`36px` / `rounded-[2.25rem]`) on dense admin enclosures. All outer Command Deck cards (`Availability Engine`, `Projects`, `Blog Articles`, and empty state cards) must strictly enforce **`rounded-2xl`** (`16px border-radius`). This exact 16px radius creates geometric harmony that matches inner text inputs and switch containers (`rounded-2xl`).
+
+- **Rule 2.5: Sub-Pixel Form & Button Alignment (`box-sizing: border-box`)**  
+  For single-card login surfaces or status forms (`420px width`), avoid nested `max-w-[...]` clamping inside `<form>` elements when the outer card already defines max-width.  
+  - Enforce `box-sizing: border-box` and explicit `width: 100%` inline across both input controls and action buttons (`54px height`), paired with explicit card padding (`48px`). This locks identical sub-pixel alignment so form controls match edge-to-edge without horizontal overflow or one-sided edge gaps.
+
+- **Rule 2.6: Sleek Action Proportions & Divider Separation**  
+  - Standardize primary and action buttons across all dashboard tabs (`ProjectsTab`, `PostsTab`, `MediaTab`, `SlideOverDrawer`) to sleek, compact dimensions (`paddingTop: 9px, paddingBottom: 9px, paddingLeft: 20px–22px, paddingRight: 20px–22px`). Avoid oversized `py-4 px-10` buttons inside dense panels.
+  - **Divider Separation:** When placing action buttons (`Save Availability`) below horizontal dividing lines (`border-t border-white/10`), apply explicit inline spacing (`style={{ paddingTop: "14px", marginTop: "16px", borderTop: "1px solid rgba(255, 255, 255, 0.12)" }}`) so buttons sit balanced with crystal-clear separation and zero chance of touching the dividing line.
+  - **Empty State Deduplication:** Always wrap header row create buttons (`+ New Article`, `+ New Project`) with conditional visibility (`posts.length > 0 && (...)`) so that when a list is empty (`posts.length === 0`), only the centered empty state CTA is rendered.
+
+- **Rule 2.7: Drag-and-Drop Handler Verification (`Media Picker & Storage`)**  
+  Before binding drag-and-drop JSX attributes (`onDragOver`, `onDragLeave`, `onDrop`) to media uploaders or R2 storage buckets (`MediaTab.tsx`), always verify that local state (`const [dragActive, setDragActive] = useState(false)`) and complete event handler functions (`handleDragOver`, `handleDragLeave`, `handleDrop`) are explicitly defined right inside the component to prevent fatal runtime `ReferenceError: handleDragOver is not defined` crashes.
 
 ---
 
-## 2. **Layout & Grid Integrity** 🗺️
-Maintain the "Premium" feel by preventing premature stacking.
-- **Medium Screen Breakpoints**: Maintain the "Premium" multi-column feel on tablets (1024px/768px) by adjusting grid ratios rather than premature stacking. 
-    - *Example*: Use specific `fr` ratios like `1.5fr 1fr 1fr` to keep footers and feature blocks side-by-side.
-- **Padding Discipline**: Ensure containers provide a standard comfortable gutter on mobile to prevent text from touching screen edges. 
-    - *Recommendation*: A minimum of `20px` is the baseline for premium spacing.
-- **Typography Reset Integrity**: AI Agents must always reset `button, input, select, textarea` to `font-family: inherit` and `color: inherit` to prevent system fonts from breaking the design language.
-- **The Dash-Density Rule**: For dashboard layouts, prioritize a "Single-View" experience. Utilize `flex-wrap` and dynamic scaling to ensure the entire interface remains visible at 100% zoom on a standard 1080p display (avoiding vertical scroll for primary tasks).
-    - *Example Logic*: Use ratios like `1fr minmax(0, 3fr)` for sidebar/content balance.
+## 3. **Universal Performance, Haptic Physics & Motion Protocol** ⚡
+*Apply these rules across ALL scenarios (`Scenario A` and `Scenario B`) to guarantee agency-grade tactile feedback and rock-solid GPU rendering.*
+
+- **Rule 3.1: Emil Kowalski Tactile Haptic Physics (`transform: scale(0.97)`)**  
+  Every interactive element (`buttons, clickable cards, toggle switches, tab switchers`) must implement snappy hardware-accelerated scale reductions on press (`transform: scale(0.97)` via `active:scale-95` or `active:scale-97`). This provides instant physical weight and tactile feedback without layout thrashing.
+  - **Custom Easings:**
+    * `--ease-out`: `cubic-bezier(0.23, 1, 0.32, 1)` (snappy UI button/modal feedback)
+    * `--ease-drawer`: `cubic-bezier(0.32, 0.72, 0, 1)` (natural iOS slide-over physics)
+
+- **Rule 3.2: Hardware Acceleration & GPU Layering (`will-change`)**  
+  Restrict animations strictly to GPU-friendly properties (`transform` and `opacity`). Never animate `height`, `width`, `margin`, or `padding` on high-frequency triggers. Force GPU layering (`will-change: transform, opacity`) on critical animated containers to ensure 60fps rendering across low-power mobile devices.
+
+- **Rule 3.3: Granular Scroll Reveals & Stacking Context Isolation**  
+  - **Granular Stagger Triggers:** Decouple giant container wrappers (`.stack-shell`, `.contact-wrap`) into item-level stagger triggers using `IntersectionObserver`. Set `rootMargin: -25%` (requiring elements to enter the middle reading zone before triggering) and use calibrated timing (`0.95s` duration, `160ms` stagger) so items never animate invisibly while scrolling slowly.
+  - **CSS Blending & Stacking Contexts:** If applying `mix-blend-mode: difference` over split background colors (`white/black`), move the blend property to the parent layer that generates the `z-index` / `position: absolute` stacking context (`.splash-static-rings`). Furthermore, **never combine `mix-blend-mode: difference` and `backdrop-filter: blur` on the same DOM element**, as browser rendering engines (`Chrome/Safari`) will abandon the blend mode and fall back to `normal` rendering.
+
+- **Rule 3.4: Unicode & Numeric Entity Escaping (`No Raw &nearr;`)**  
+  Never write raw HTML named entity references (`&nearr;`, `&rarr;`) directly inside React/Next.js JSX strings, as React does not decode non-XML entities and will render `&nearr;` literally as text. Always use direct Unicode symbols (`↗`, `−`, `©`) or numeric character references (`&#8599;`), or cleanly eliminate decorative arrows for a sleeker minimalist presentation.
+
+- **Rule 3.5: Character Washout Protection Over Diagonal Splits**  
+  When text spans across a high-contrast diagonal background split (`clip-path` transition from white to black), wrap key boundary characters individually in `<span>` tags (`.splash-letter-i`, `.splash-letter-t`). Assign exact local gradients (`#1C1C1E 0%, #28282B 35%, #E5E5E7 100%`) so boundary characters maintain dark tones over the white panel while immediately popping to `#E5E5E7` across the black panel.
 
 ---
 
-## 3. **Performance & Animation Logic** ⚡
-High quality with low overhead.
-- **Semantic HTML5**: Always use strictly semantic tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`) for SEO and Accessibility.
-- **Scroll Reveals**: Use the native `IntersectionObserver` API for "reveal-on-scroll" animations to avoid heavy JS scroll libraries.
-- **Hardware Acceleration**: Prioritize GPU-friendly properties (`transform`, `opacity`) for all transitions. Force GPU layering on critical animated elements (using `will-change`) to ensure smooth rendering on low-power mobile devices.
-- **Tactile Feedback Protocol**: Implement high-end haptic-lite interaction logic. All primary interactive elements must utilize subtle hardware-accelerated transformations (e.g., `scale(0.98)`) for immediate active-state feedback.
+## 4. **Scenario C: Multi-Paradigm Deployment & DevOps Strategy** 🛰️
+*Before applying deployment configs or cache busters, AI agents must detect the underlying infrastructure architecture:*
+
+### 4.1 **Paradigm 1: Modern Edge / Serverless Stack (`Next.js App Router, Cloudflare Workers/Pages, Vercel, Netlify`)**
+- **Immutable Content-Addressed Caching:** Modern framework bundlers (`Next.js SWC / webpack`) automatically generate immutable, content-hashed chunk filenames (`chunks/416-53d9ffb2691dbb80.js`). **Do not** inject manual query-string cache busters (`?v=2.0`) into JS/CSS imports or module headers, as this interferes with automated edge CDN caching.
+- **Mandatory Pre-Flight Build Verification:** Before making success claims or merging branches, always run automated verification commands:
+  ```bash
+  npm run build
+  npx tsc --noEmit
+  ```
+  Ensure zero TypeScript boundary errors, zero Server/Client hydration mismatches, and complete static/dynamic route generation.
+
+### 4.2 **Paradigm 2: Traditional Server / cPanel / PHP Stack (`Static HTML/CSS, Apache/LiteSpeed, Custom PHP`)**
+- **Explicit Query-String Cache Busting:** When deploying static HTML/CSS or custom PHP architectures via traditional hosting (`cPanel`), aggressive browser/CDN caching will lock old styles. Always append explicit version query strings to asset links:
+  ```html
+  <link rel="stylesheet" href="css/base.css?v=2.4">
+  <script src="js/main.js?v=1.8"></script>
+  ```
+- **The Handshake & Absolute Path Protocol:** Store all deployment pull scripts (`git pull origin master 2>&1`), `.cpanel.yml` configs, and sensitive API tokens safely outside the public web root (`public_html`). Always use absolute server file paths inside `.cpanel.yml` file movement tasks to guarantee atomic deployment across environment lines.
+- **Security & Modal Cleanliness:** Never commit hardcoded production login credentials or hint text (`Hint: admin / root`) inside client-facing authentication surfaces before pushing to GitHub repositories.
 
 ---
 
-## 4. **Bilingual "Zero-Reload" Strategy** (Situational) 🌍
-**Note**: Only implement this protocol if a project explicitly requires multi-language support. Do not apply for single-language builds.
-- **Method**: Render the page with both languages present. Use a `data-lang` attribute on the `<html>` tag to toggle visibility via CSS (`.lang-en { display: none; }`).
-- **UX**: Persist the selection using `localStorage` to ensure the preference is remembered upon return.
+## 5. **Scenario D: Situational Bilingual "Zero-Reload" Strategy (`Conditional Option`)** 🌍
+*Only activate this protocol if a project explicitly specifies multi-language toggle functionality without page reloads. Do not apply to single-language builds.*
+- **Method:** Render both language strings directly within the DOM markup. Use a `data-lang` attribute on the root `<html>` tag and toggle visibility cleanly via CSS (`html[data-lang="en"] .lang-bn { display: none; }`).
+- **Persistence:** Save the selected language preference to `localStorage` immediately upon toggle (`localStorage.setItem('app_lang', 'bn')`) and re-hydrate it synchronously before first paint to prevent layout flicker (`FOUC`).
 
 ---
-
-## 5. **Automated Deployment & DevOps** 🛰️
-- **The Handshake Protocol**: For Git-to-Server workflows, utilize an automated deployment sequence (e.g., a secure PHP pull script or GitHub Action). Store all sensitive tokens/secrets safely outside the public web root.
-- **Environment Integrity**: When configuring deployment tasks (e.g., in `.cpanel.yml` or CI scripts), use **Absolute Paths** for all file movements to ensure persistence across environment lines.
-- **Cache-Busting Strategy**: Production assets must utilize version strings to bypass aggressive browser caching.
-    - *Example*: Use `styles.css?v=2.4` to ensure users see updates instantly without manual hard-reloads.
-
----
-
-## 6. **Component Architectural Standards** 🧱
-Maintain a "Zero-Style-Bloat" codebase through pattern standardization.
-- **Global Utility Logic**: Identify and codify recurring premium design patterns into **Global Utility Classes** (e.g., glassmorphism, depth/shadows, modal backdrops). This ensures interaction parity and reduces technical debt.
-    - *Standard Classes*: Use descriptive names like `.premium-card` (for depth/lift) and `.modal-overlay` (for backdrops).
-- **Depth & Dimension Protocol**: Interactive overlays and modals should utilize centralized fixed positioning and background isolation (e.g., `backdrop-filter: blur(4px)`) to keep task focus sharp.
-
----
-**Standard Created**: April 2026  
-**Status**: Universal / Project-Agnostic
+**Standard Updated**: July 2026  
+**Status**: Universal / Scenario-Aware / Battle-Tested
